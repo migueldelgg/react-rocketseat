@@ -1,11 +1,15 @@
+// JSX = Javascript + XML(HTML)
 
-function App() {
+import { Post } from "./Post"
+
+export function App() {
   return (
     <div>
-      <h1>Hello World!</h1>
-      <p>RocketSeat</p>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
+      <Post/>
     </div>
   )
 }
-
-export default App
