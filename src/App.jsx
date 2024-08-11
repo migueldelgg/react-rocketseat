@@ -1,15 +1,18 @@
 // JSX = Javascript + XML(HTML)
 
 import { Post } from "./Post"
+import { Header } from "./components/Header"
+
+import './styles.css'
 
 export function App() {
   return (
     <div>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
-      <Post/>
+      <Header/>
+
+      <Post author = "Miguel" content = "conteudo da pagina"/> 
+
+      <Post author = "Gabriel" content = "Post do Gabriel"/> 
     </div>
   )
 }
