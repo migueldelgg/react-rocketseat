@@ -1,6 +1,6 @@
 import styles from './Post.module.css'
 
-export function Post() {
+export function Post({ name }) {
     return (
         <article className={styles.post}>
 
@@ -8,7 +8,7 @@ export function Post() {
                 <div className={styles.author}>
                     <img className={styles.avatar} src="https://avatars.githubusercontent.com/u/150628051?v=4" />
                     <div className={styles.authorInfo}>
-                        <strong>Miguel Santos Delgado</strong>
+                        <strong>{name}</strong>
                         <span>Web Developer</span>
                     </div>
                 </div>
@@ -22,6 +22,18 @@ export function Post() {
                 <p>👉 <a href="">jane.design/doctorcare</a></p>
                 <p><a href="">#novoprojeto</a> <a href="">#nlw</a> <a href="">#rocketseat</a></p>
             </div>
+
+            <form className={styles.commentForm}>
+                <strong>Deixe seu feedback:</strong>
+
+                <textarea
+                    placeholder='Escreva um comentário...'
+                />
+
+                <footer>
+                    <button type='submit'>Publicar</button>
+                </footer>
+            </form>
         </article>
     );
 }
