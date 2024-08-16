@@ -1,5 +1,6 @@
 import styles from './Post.module.css'
 import { Comment } from './Comment';
+import { Avatar } from './Avatar';
 
 export function Post({ name }) {
     return (
@@ -8,8 +9,8 @@ export function Post({ name }) {
             <header>
                 <div className={styles.author}>
 
-                    <img className={styles.avatar}
-                    src="https://avatars.githubusercontent.com/u/150628051?v=4"
+                    <Avatar 
+                    src="https://github.com/migueldelgg.png"
                     />
 
                     <div className={styles.authorInfo}>
@@ -31,9 +32,11 @@ export function Post({ name }) {
                     É um projeto que fiz no NLW Return, evento da Rocketseat. 
                     O nome do projeto é DoctorCare 🚀</p>
                 <p>👉 <a href="">jane.design/doctorcare</a></p>
-                <p><a href="">#novoprojeto</a> 
-                <a href="">#nlw</a>
-                <a href="">#rocketseat</a></p>
+                <p>
+                    <a href="">#novoprojeto</a>{' '}
+                    <a href="">#nlw</a>{' '}
+                    <a href="">#rocketseat</a>
+                </p>
             </div>
 
             <form className={styles.commentForm}>
