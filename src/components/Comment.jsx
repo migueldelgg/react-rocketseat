@@ -13,12 +13,12 @@ export function Comment() {
                             <strong>Miguel Santos Delgado</strong>
                             <time title="13 de Agosto às 16:37" 
                                     dateTime="2024-08-13 16:37:00">
-                                    Cerca de 1h atrás
+                                     Cerca de 1h atrás
                             </time>
                         </div>
 
                         <button title='Deletar comentário'>
-                            <Trash size={20}/>
+                            <Trash size={24}/>
                         </button>
                     </header>
 
@@ -32,8 +32,6 @@ export function Comment() {
                     </button>
                 </footer>
             </div>
-
-
         </div>
     )
 }
