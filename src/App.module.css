@@ -8,3 +8,18 @@
     gap: 2rem;
     align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+
+    /*aqui fizemos uma regra de 3 basica
+        16px = 100%
+        14px = x    14x100 / 16 = x -> 1400 / 16 = 87.5
+    */
+    html {
+        font-size: 87.5%;
+    }
+
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
