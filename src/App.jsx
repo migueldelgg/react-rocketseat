@@ -56,7 +56,7 @@ export function App() {
         <main>
           {posts.map(post => (
             <Post
-              key={post.id} // É uma boa prática adicionar uma key quando se está renderizando listas
+              key={post.id} // É uma boa prática adicionar uma key quando se está renderizando listas, 
               author={post.author}
               content={post.content}
               publishedAt={post.publishedAt}
