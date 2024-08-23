@@ -22,7 +22,7 @@ export function Sidebar() {
             <footer>
                 <a href="https://github.com/migueldelgg">
                     <PencilLine size={20}/>
-                    Editar seu perfil
+                    Editar perfil
                 </a>
             </footer>
         </aside>
